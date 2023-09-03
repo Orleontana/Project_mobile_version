@@ -5,11 +5,16 @@
     padding-bottom: 6%;
 }
 
+@media (max-width: 600px) {
+    .principal-block__first-screen, .content, .third-screen__box, .footer-size {
+        padding: 0 2%;
+    }
+}
+
 .principal-block {
     width: 100%;
     background-image: url("hero.jpg");
     background-size: cover;
-    
 }
 
 .text {
@@ -22,6 +27,12 @@
     justify-content: space-between;
     align-items: center;
     color: #44403c;
+}
+
+@media (max-width: 600px) {
+    .header {
+        justify-content: space-around;
+    }
 }
 
  .header__logo {
@@ -101,12 +112,24 @@ html {
     justify-content: space-between;
 }
 
+@media (max-width: 600px) {
+    .second-screen__container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .container__box {
     width: 325px;
-    height: 220px;
     background-color: #f1f1f1;
     border-radius: 10px;
-    
+    padding-bottom: 4%;
+}
+
+@media (max-width: 600px) {
+    .container__box {
+        margin-bottom: 2%;
+    }
 }
 
 .box__icon {
@@ -147,6 +170,13 @@ h4 {
 
 .box {
     display: flex;
+}
+
+@media (max-width: 600px) {
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .set {
@@ -206,7 +236,13 @@ h4 {
     border-radius: 10px;
     border: 1px solid #d6d3d1;
     margin: 0 5px;
+}
 
+@media (max-width: 600px) {
+    .third-sreen__button {
+        flex-grow: 1; /*почему не растягиваются кнопки по ширине экрана?*/
+        margin-bottom: 2%;
+    }
 }
 
 .third-sreen__button:hover {
@@ -220,6 +256,13 @@ h4 {
 .buttons {
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .margin {
@@ -257,6 +300,14 @@ h4 {
     justify-content: space-between;
 }
 
+@media (max-width: 600px) {
+    .abonements-box {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10%;
+    }
+}
+
 .abonement {
     width: 325px;
     height: 325px;
@@ -264,6 +315,12 @@ h4 {
     border-radius: 10px;
     box-sizing: border-box;
     position: relative;
+}
+
+@media (max-width: 600px) {
+    .abonement {
+        margin-bottom: 3%;
+    }
 }
 
 .abonement__title {
