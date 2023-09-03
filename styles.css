@@ -1,0 +1,356 @@
+.principal-block__first-screen, .content, .third-screen__box, .footer-size {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 6%;
+}
+
+.principal-block {
+    width: 100%;
+    background-image: url("hero.jpg");
+    background-size: cover;
+    
+}
+
+.text {
+    font-family: 'Nunito Sans', sans-serif;
+    }
+
+.header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #44403c;
+}
+
+ .header__logo {
+    width: 100px;
+    height: 100px;
+ }
+
+ .header__link-menu {
+    margin: 0 8px;
+    color: #44403c;
+    text-decoration: none;
+ }
+
+ .header__link-menu:hover {
+    color: blue;
+ }
+
+ .header__phone {
+    display: flex;
+    align-items: center;
+ }
+ 
+ .header__phone_number {
+    margin: 0 0 0 10px;
+ }
+ 
+ .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6.5% 0;
+
+ }
+
+ .title__item {
+    margin: 25px 0;
+ }
+h1 {
+    font-size: 60px;
+    font-weight: 600;
+    color: #1c1917;
+}
+
+h3 {
+    font-size: 20px;
+    color: #78716c;
+}
+
+html {
+    --primary-color: #f97316;
+    --secondary-color: #fafaf9;
+    --check-color: #65a30d;
+}
+.button {
+    background-color: var(--primary-color);
+    color: white;
+    width: 30%;
+    font-size: 20px;
+    text-align: center;
+    padding: 1.75%;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: #ea580c;
+}
+
+.title-of-section {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 600;
+    padding: 100px 0px 55px;
+}
+
+.second-screen__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__box {
+    width: 325px;
+    height: 220px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    
+}
+
+.box__icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    
+}
+
+.icons {
+    font-size: 24px;
+    color: white;
+}
+
+.text-box {
+    color: #1c1917;
+    font-size: 18px;
+    text-align: center;
+}
+
+.note {
+    font-size: 16px;
+    color: #78716c;
+    padding: 20px 20px 0;
+    line-height: 20px;
+}
+
+h4 {
+    font-size: 30px;
+    padding: 100px 0 50px;
+    font-weight: 600;
+}
+
+.box {
+    display: flex;
+}
+
+.set {
+    line-height: 20px;
+    color: #78716c;
+    font-size: 16px;
+}
+
+.pad {
+    padding: 0 0 20px
+}
+
+.block-text {
+    width: 512px;
+}
+
+.img {
+    width: 512px;
+    margin-top: 9%;
+   
+}
+
+.box__image {
+    width: 512px;
+    object-fit: contain;
+}
+
+.third-screen {
+    background-color: #ffedd5;
+}
+
+.third-screen__box {
+    padding-bottom: 8%;
+}
+
+.third-screen__title-of-section {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 600;
+    padding: 100px 0 20px;
+}
+
+.third-screen__text {
+    text-align: center;
+    font-size: 18px;
+    padding: 0 0 60px;
+}
+
+.third-sreen__button {
+    background-color: white;
+    color: #78716c;
+    width: 280px;
+    height: 55px;
+    font-size: 20px;
+    text-align: left;
+    line-height: 55px;
+    border-radius: 10px;
+    border: 1px solid #d6d3d1;
+    margin: 0 5px;
+
+}
+
+.third-sreen__button:hover {
+    background-color: #d6d3d1;
+}
+
+.third-sreen__button_text {
+    padding: 0 0 0 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.margin {
+    margin: 0 5px;
+}
+
+.fourth-screen {
+    background-color: var(--secondary-color);
+}
+
+.fourth-screen__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.feedback {
+    border-bottom: 1px solid #d6d3d1;
+    box-sizing: border-box;
+
+}
+.feedback-title {
+    color: #1c1917;
+    font-size: 18px;
+    margin: 30px 0 10px;
+}
+
+.feedback-text {
+    color: #78716c;
+    padding: 0 0 30px;
+}
+
+.abonements-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.abonement {
+    width: 325px;
+    height: 325px;
+    border: 1px solid #d6d3d1;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.abonement__title {
+    color: var(--primary-color);
+    font-size: 18px;
+    padding: 30px 0 5px 20px;
+}
+
+.abonement__price {
+    font-size: 22px;
+    font-weight: 500;
+    padding: 5px 0 30px 20px;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.list-check {
+    color: var(--check-color);
+    padding: 0 10px 0 20px;
+    font-size: 16px;
+}
+
+.abonement__list {
+    font-size: 14px;
+    color: #78716c;
+}
+
+.abonement__button {
+    width: 280px;
+    height: 40px;
+    background-color: #ffedd5;
+    color: #ea580c;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin:20px auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.abonement__button:hover {
+    background-color:#fed7aa;
+}
+
+.footer {
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+.footer-size {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+    color: #78716c;
+}
+
+.footer__phone {
+    display: flex;
+    align-items: center;
+    
+}
+
+.footer__icons {
+    font-size: 24px;
+    display: flex;
+}
+
+.icon_inst:hover {
+    color: #44403c;
+}
+
+.icon_fb:hover {
+    color: #44403c;
+}
+
+.icon_twit:hover {
+    color: #44403c;
+}
+.padd {
+    padding: 0 5px;
+}
