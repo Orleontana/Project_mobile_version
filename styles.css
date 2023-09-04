@@ -76,9 +76,21 @@ h1 {
     color: #1c1917;
 }
 
+@media (max-width: 600px) {
+    h1 {
+        font-size: 42px;
+    }
+}
+
 h3 {
     font-size: 20px;
     color: #78716c;
+}
+
+@media (max-width: 600px) {
+    h3 {
+        font-size: 18px;
+    }
 }
 
 html {
@@ -240,8 +252,9 @@ h4 {
 
 @media (max-width: 600px) {
     .third-sreen__button {
-        flex-grow: 1; /*почему не растягиваются кнопки по ширине экрана?*/
+        flex-grow: 1; /*почему не растягиваются кнопки по ширине экрана из-за чего приходится устанавливать значение width?*/
         margin-bottom: 2%;
+        width: 100%;
     }
 }
 
@@ -386,6 +399,13 @@ h4 {
     color: #78716c;
 }
 
+@media (max-width: 600px) {
+    .footer-size {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .footer__phone {
     display: flex;
     align-items: center;
@@ -395,6 +415,12 @@ h4 {
 .footer__icons {
     font-size: 24px;
     display: flex;
+}
+
+@media (max-width: 600px) {
+    .footer__icons, .footer__phone {
+    margin-bottom: 3%;
+    }
 }
 
 .icon_inst:hover {
