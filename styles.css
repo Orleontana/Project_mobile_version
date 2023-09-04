@@ -22,7 +22,6 @@
     }
 
 .header {
-    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,6 +105,12 @@ html {
     text-align: center;
     padding: 1.75%;
     border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .button {
+        width: 70%;
+    }
 }
 
 .button:hover {
