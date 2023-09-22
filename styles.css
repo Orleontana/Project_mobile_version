@@ -6,8 +6,9 @@
 }
 
 @media (max-width: 600px) {
-    .principal-block__first-screen, .content, .third-screen__box, .footer-size {
-        padding: 0 2%;
+    .principal-block__first-screen, .content, .box, .third-screen__box, .title-of-section, .fourth-screen__box, .footer-size {
+        padding-left: 2%;
+        padding-right: 2%;
     }
 }
 
@@ -15,6 +16,12 @@
     width: 100%;
     background-image: url("hero.jpg");
     background-size: cover;
+}
+
+@media (max-width: 1000px) {
+    .principal-block {
+    background-position: top;
+    }
 }
 
 .text {
@@ -28,15 +35,23 @@
     color: #44403c;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     .header {
-        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
     }
 }
 
  .header__logo {
     width: 100px;
     height: 100px;
+ }
+
+ @media (max-width: 1000px) {
+    .header__logo {
+       margin-top: 5%;
+    }
  }
 
  .header__link-menu {
@@ -53,9 +68,15 @@
     display: flex;
     align-items: center;
  }
+
+ @media (max-width: 1000px) {
+    .header__phone {
+       margin-top: 5%;
+    }
+ }
  
  .header__phone_number {
-    margin: 0 0 0 10px;
+    margin-left: 10px;
  }
  
  .title {
@@ -99,18 +120,12 @@ html {
 }
 .button {
     background-color: var(--primary-color);
+    border: none;
     color: white;
-    width: 30%;
     font-size: 20px;
     text-align: center;
-    padding: 1.75%;
+    padding: 2%;
     border-radius: 10px;
-}
-
-@media (max-width: 600px) {
-    .button {
-        width: 70%;
-    }
 }
 
 .button:hover {
@@ -129,7 +144,7 @@ html {
     justify-content: space-between;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     .second-screen__container {
         flex-direction: column;
         align-items: center;
@@ -137,15 +152,22 @@ html {
 }
 
 .container__box {
-    width: 325px;
+    width: calc(100% / 3 - 5px);
     background-color: #f1f1f1;
     border-radius: 10px;
     padding-bottom: 4%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     .container__box {
         margin-bottom: 2%;
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container__box {
+        width: 50%;
     }
 }
 
@@ -189,7 +211,7 @@ h4 {
     display: flex;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     .box {
         flex-direction: column;
         align-items: center;
@@ -206,27 +228,22 @@ h4 {
     padding: 0 0 20px
 }
 
-.block-text {
-    width: 512px;
-}
 
 .img {
-    width: 512px;
+    
     margin-top: 9%;
    
 }
 
 .box__image {
-    width: 512px;
+    width: 100%;
     object-fit: contain;
 }
 
-.third-screen {
-    background-color: #ffedd5;
-}
 
 .third-screen__box {
     padding-bottom: 8%;
+    background-color: #ffedd5;
 }
 
 .third-screen__title-of-section {
@@ -257,9 +274,8 @@ h4 {
 
 @media (max-width: 600px) {
     .third-sreen__button {
-        flex-grow: 1; /*почему не растягиваются кнопки по ширине экрана из-за чего приходится устанавливать значение width?*/
         margin-bottom: 2%;
-        width: 100%;
+        width: 75%;
     }
 }
 
@@ -268,7 +284,7 @@ h4 {
 }
 
 .third-sreen__button_text {
-    padding: 0 0 0 5px;
+    padding-left: 5px;
 }
 
 .buttons {
